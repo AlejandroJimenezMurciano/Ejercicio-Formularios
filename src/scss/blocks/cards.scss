@@ -1,0 +1,40 @@
+@use '../functions/image.scss' as *;
+@use '../mixins/responsive.scss' as *;
+
+.front-card {
+    background-image: image('bg-card-front.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 290px;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 130px;
+    z-index: 1;
+
+    @include responsive(laptop) {
+        background-image: image('bg-card-front.png');
+        margin-top: 200px;
+        margin-left: 100px;
+    }
+}
+
+.back-card {
+    background-image: image('bg-card-back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 290px;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 200px;
+
+    @include responsive(laptop) {
+        background-image: image('bg-card-back.png');
+        margin-top: 380px;
+        margin-left: 170px;
+    }
+
+}

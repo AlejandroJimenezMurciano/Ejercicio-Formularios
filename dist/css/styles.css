@@ -360,4 +360,85 @@ a {
   color: inherit;
 }
 
-/* ESTILOS DEL FOOTER */
+body {
+  margin: 0;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #333;
+}
+
+/* ESTILOS DEL FOOTER */ /* ESTILOS DEL MAIN */
+.main {
+  display: grid;
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    grid-template-columns: 300px 1fr;
+  }
+}
+
+.purple-background {
+  height: 225px;
+  width: 100%;
+  background-image: url("../assets/images/bg-main-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 1024px) {
+  .purple-background {
+    background-image: url("../assets/images/bg-main-desktop.png");
+    height: 700px;
+  }
+}
+
+.grey-background {
+  background-color: rgb(193, 190, 190);
+  height: 700px;
+  width: 100%;
+}
+
+.front-card {
+  background-image: url("../assets/images/bg-card-front.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 290px;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 130px;
+  margin-left: 130px;
+  z-index: 1;
+}
+@media screen and (min-width: 1024px) {
+  .front-card {
+    background-image: url("../assets/images/bg-card-front.png");
+    margin-top: 200px;
+    margin-left: 100px;
+  }
+}
+
+.back-card {
+  background-image: url("../assets/images/bg-card-back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 290px;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+@media screen and (min-width: 1024px) {
+  .back-card {
+    background-image: url("../assets/images/bg-card-back.png");
+    margin-top: 380px;
+    margin-left: 170px;
+  }
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+}

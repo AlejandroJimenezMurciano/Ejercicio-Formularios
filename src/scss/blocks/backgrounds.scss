@@ -1,0 +1,21 @@
+@use '../functions/image.scss' as *;
+@use '../mixins/responsive.scss' as *;
+
+.purple-background {
+    height: 225px;
+    width: 100%;
+    background-image: image('bg-main-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include responsive(laptop) {
+        background-image: image('bg-main-desktop.png');
+        height: 700px;
+    }
+}
+
+.grey-background {
+    background-color: rgb(193, 190, 190);
+    height: 700px;
+    width: 100%;
+}
